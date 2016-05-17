@@ -52,7 +52,7 @@ table {
 
 body{
   background-color: gray;
-  font-family: serif;
+  font-family: verdana;
 }
 
 /******************** HEADER ********************/
@@ -68,20 +68,54 @@ body{
   color: white;
   border: solid;
   border-color: white;
-  padding: 10%;
-  margins: 10%;
+  border-width: thin;
   display: inline-block;
 }
 
-/*.left, .right, li{
+.nav-bar {
   display: inline-block;
-}*/
+  border: solid;
+  color: orange;
+  margin: 0 auto;
+  width: 100%;
+}
 
-.nav-bar, li{
+.nav-bar, .nav-home, #logo{
   display: inline-block;
 }
 
-/*.nav-home{
+.nav-home {
+  border: dotted;
+  border-color: red;
+}
+
+.left {
+  display: inline-block;
+  border: dotted;
+  border-color: white;
+}
+
+.center {
+  display: inline-block;
+  border: dotted;
+  border-color: yellow;
+}
+
+.right {
+  display: inline-block;
+  border: dotted;
+  border-color: green;
+}
+
+li {
+  display: inline-block;
+}
+
+.separator{
+  color: white
+}
+
+.nav-home{
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -93,4 +127,11 @@ body{
   text-decoration: none;
   font-weight: normal;
   color: black;
-}*/
+}
+
+#login{
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+  display: inline-block;
+}
