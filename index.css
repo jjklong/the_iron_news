@@ -99,16 +99,18 @@ ol li:before{
 
 .page-header{
   background: #424242;
-  padding: 1.5em;
+	height: auto;
+	padding: 4px;
 }
 
 #logo{
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   color: white;
   border: solid;
   border-color: white;
   border-width: thin;
+	padding: 4px 6px 4px 6px;
   display: inline-block;
 }
 
@@ -125,26 +127,26 @@ ol li:before{
 }
 
 .nav-home {
-  border: dotted;
-  border-color: red;
+															  /*border: dotted;
+															  border-color: red;*/
 }
 
 .left {
-  display: inline-block;
-  border: dotted;
-  border-color: white;
+  display: inline;
+															  /*border: dotted;*/
+								  							/*border-color: white;*/
 }
 
 .center {
   display: inline-block;
-  border: dotted;
-  border-color: yellow;
+														  /*border: dotted;*/
+								  						/*border-color: yellow;*/
 }
 
 .right {
   display: inline-block;
-  border: dotted;
-  border-color: green;
+														  /*border: dotted;
+														  border-color: green;*/
 }
 
 .page-header li {
@@ -158,6 +160,7 @@ ol li:before{
 .nav-home{
   text-decoration: none;
   font-weight: bold;
+	font-size: 16px;
   color: black;
   margin: 10px;
   display: inline-block;
@@ -176,21 +179,37 @@ ol li:before{
   display: inline-block;
 }
 
+.right{
+	display: inline;
+	padding-left: 20%;
+}
+
 /******************** FOOTER ********************/
 
 .footer-bar{
-	display: inline-block;
-	border: dotted;
-}
-
-.nav-barf{
-	display: inline-block;
-	border: solid;
+	margin: 10px;
 }
 
 .footlinks{
-	display: inline-block;
-	border: solid;
-	border-color: white;
+	display: inline;
 	font-size: 8px;
+	color: rgb(25, 25, 25);
+}
+
+.nav-barf, .footlinks{
+	text-align: center;
+}
+
+.searchbox {
+	width: 100px;
+	height: 16px;
+	background-color: white;
+	display: block;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-right: auto;
+}
+
+h3{
+	color: rgb(50, 50, 50);
 }
