@@ -65,11 +65,9 @@ main{
 	border-bottom: solid 2px #424242
 }
 
-.list_numbers{
+ol {
 	counter-reset: li;
 }
-
-
 
 ol li:before{
 	content: counter(li)".";
@@ -77,11 +75,25 @@ ol li:before{
 	padding: 2px;
 }
 
+.points {
+  font-size: 8px;
+  color: rgb(50, 50, 50);
+  padding: 5px;
+}
+
+.user {
+  font-size: 8px;
+  color: rgb(50, 50, 50);
+  padding: 5px;
+}
+
 .comments {
   font-size: 8px;
   color: rgb(50, 50, 50);
   padding: 5px;
 }
+
+
 
 /******************** HEADER ********************/
 
@@ -162,4 +174,23 @@ ol li:before{
   font-weight: normal;
   color: black;
   display: inline-block;
+}
+
+/******************** FOOTER ********************/
+
+.footer-bar{
+	display: inline-block;
+	border: dotted;
+}
+
+.nav-barf{
+	display: inline-block;
+	border: solid;
+}
+
+.footlinks{
+	display: inline-block;
+	border: solid;
+	border-color: white;
+	font-size: 8px;
 }
