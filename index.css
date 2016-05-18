@@ -51,7 +51,7 @@ table {
 /******************** BODY ********************/
 
 body{
-  background-color: gray;
+  background-color: #eef0f3;
   font-family: verdana;
   font-size: 16px;
   color: rgb(0, 0, 0);
@@ -62,7 +62,29 @@ body{
 
 
 main{
-	border-bottom: solid 2px #424242
+	border-bottom: solid 2px #424242;
+	padding: 5px;
+	position: relative;
+}
+
+.list_item{
+	margin: 3px;
+}
+
+.titles{
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 16px;
+	color: black;
+	margin: 4px;
+}
+
+.source_link{
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgb(50, 50, 50);
+
 }
 
 ol {
@@ -72,33 +94,38 @@ ol {
 ol li:before{
 	content: counter(li)".";
 	counter-increment: li;
-	padding: 2px;
-}
-
-.points {
-  font-size: 8px;
-  color: rgb(50, 50, 50);
-  padding: 5px;
+	padding: 2px 4px 2px 2px;
 }
 
 .user {
   font-size: 8px;
-  color: rgb(50, 50, 50);
-  padding: 5px;
+  color: #828282;
+  padding: 3px 2px 2px 2px;
+	text-decoration: none;
 }
 
 .comments {
   font-size: 8px;
-  color: rgb(50, 50, 50);
-  padding: 5px;
+  color: #828282;
+  padding: 3px 2px 2px 2px;
+	text-decoration: none;
 }
+
+.points{
+	font-size: 8px;
+	color: #828282;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+
 
 
 
 /******************** HEADER ********************/
 
 .page-header{
-  background: #424242;
+  background: #8d90a1;
 	height: auto;
 	padding: 4px;
 }
@@ -186,6 +213,10 @@ ol li:before{
 
 /******************** FOOTER ********************/
 
+footer{
+	margin: 15px auto;
+}
+
 .footer-bar{
 	margin: 10px;
 }
@@ -202,14 +233,20 @@ ol li:before{
 
 .searchbox {
 	width: 100px;
-	height: 16px;
+	height: 14px;
 	background-color: white;
-	display: block;
-	margin-left: auto;
-	margin-top: 10px;
-	margin-right: auto;
 }
 
-h3{
+.search{
 	color: rgb(50, 50, 50);
+	font-size: 14px;
+}
+
+.center, {
+	margin: 0 auto;
+}
+
+.search, .searchbox{
+	display: inline-block;
+	text-align: center;
 }
