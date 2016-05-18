@@ -57,8 +57,24 @@ body{
   color: rgb(0, 0, 0);
 }
 
-.arrow, .titles{
-  display: inline;
+
+/**MAIN**/
+
+
+main{
+	border-bottom: solid 2px #424242
+}
+
+.list_numbers{
+	counter-reset: li;
+}
+
+
+
+ol li:before{
+	content: counter(li)".";
+	counter-increment: li;
+	padding: 2px;
 }
 
 .comments {
@@ -86,8 +102,8 @@ body{
 
 .nav-bar {
   display: inline-block;
-  border: solid;
-  color: orange;
+  /*border: solid;*/
+  /*color: orange;*/
   margin: 0 auto;
   width: 100%;
 }
